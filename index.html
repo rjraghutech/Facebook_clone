@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/844985f32c.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        body{
+            font-family: 'Poppins', sans-serif;
+        }
+        .flex{
+            display: flex;
+        }
+        .container{
+            max-width: 1080px;
+            padding: 50px 10px 50px 10px;
+            justify-content: space-between;
+        }
+        .maindiv{
+            margin: 50px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        .fblogo{
+            /* margin: 30px; */
+            height: 85px;
+        }
+        .left h2{
+            font-size: 24px;
+            padding-left: 25px;
+        }
+        .face{
+            border: 1px solid grey;
+            padding: 10px;
+        }
+        .face input{
+            border: 1px solid rgb(206, 204, 204);
+            padding: 10px 0 10px 10px;
+            width: 95%;
+            margin: 8px;
+            border-radius: 8px;       
+            text-align: left;
+        }
+        .login input{
+           background-color: blue;
+           color: white;
+            /* padding: 10px 165px; */
+            text-align: center;
+            font-weight: 900;
+        }
+        .create{
+            justify-content: center;
+        }
+        .create input{
+            background-color: green;
+            color: white;
+            text-align: center;
+            width: 50%;
+        }
+        .face .forgot a{
+            text-decoration: none;
+            color: blue;
+        }
+        .forgot a{
+            text-align: center;
+        }
+        .below a{
+            text-decoration: none;
+            color: black;
+            font-weight: bolder;
+            
+        }
+        .below{
+            margin: 30px 10px;
+            /* font-size: 20px; */
+        }
+    </style>
+</head>
+<body>
+    <main class="container flex">
+        <div class="maindiv">
+            <div class="left">
+                <img class="fblogo img" src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="Facebook">
+                <h2>Facebook helps you connect and share with the people in your life.</h2>
+            </div>
+            <div class="right">
+                <form action="backend.js" class="face">
+                    <div class="email">
+                        <input type="text" placeholder="Email address or phone number">
+                    </div>
+                    <div class="password">
+                        <input type="password" name="password" id="password" placeholder="Password">
+                    </div>
+                    <div class="login">
+                        <input type="button" value="Log In">
+                    </div>
+                    <div class="forgot">
+                        <a href="#">Forgotten password?</a>
+                    </div>
+                    <hr class="line">
+                    <div class="create">
+                        <input type="button" value="Create New Account">
+                    </div>
+                </form>
+                <div class="below">
+                    <h3><a href="#">Create a Page</a> for a celebrity, brand or business.</h3>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
